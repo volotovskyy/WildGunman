@@ -1,0 +1,183 @@
+body {
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: #000;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+/*general settings*/
+.game-field {
+    background: url(../media/images/bg.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    position: relative;
+    left: 25%;
+    margin-top: 100px;
+    top: 28%;
+    z-index: 1;
+
+    width: 924px;
+    height: 469px;
+
+    overflow: hidden;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    padding: 0;
+}
+
+.hidden, .visible {
+    transition: all .7s ease-out;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.current-level {
+    position: absolute;
+    top: 85%;
+    left: 2%;
+
+    font-size: 24px;
+    padding: 8px;
+    color: #232525;
+    transition: all .2s ease-out;
+    background-color: rgba(229, 229, 229, 0.94);
+    border: 1px solid #372871;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.game-status, .game-statistics {
+    position: absolute;
+    z-index: 400;
+
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+
+    padding: 20px;
+
+    color: #232525;
+    background-color: rgba(229, 229, 229, 0.94);
+    border: 1px solid #372871;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    transition: all .6s ease-out;
+
+}
+
+.game-status {
+    top: 30%;
+    left: 70%;
+}
+
+.game-statistics {
+    top: 10%;
+    left: 50%;
+    color: rgba(29, 255, 46, 1);
+    background-color: transparent;
+    border: none;
+}
+
+/*BUTTONS*/
+button {
+    position: absolute;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background-color: rgba(229, 229, 229, 0.94);
+
+    transition: all .4s ease-out;
+
+    cursor: pointer;
+    color: #000;
+}
+
+button:hover {
+    background-color: rgba(76, 76, 76, 0.82);
+    color: rgb(229, 229, 229);
+}
+
+button:active {
+    color: #1d90ff;
+}
+
+.next-level-button {
+    position: absolute;
+    top: 85%;
+    right: 2%;
+
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 8px;
+    color: #232525;
+    transition: all .2s ease-out;
+    background-color: rgba(229, 229, 229, 0.94);
+    border: 1px solid #302279;
+
+}
+
+.new-game-button {
+
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+
+    padding: 20px;
+
+    color: #232525;
+    background-color: rgba(229, 229, 229, 0.94);
+    border: 1px solid #372871;
+
+    transition: all .3s ease-out;
+}
+
+/*gunman*/
+.gunman {
+    background: url('../media/images/gunman.png') 0 0;
+    position: absolute;
+    left: 950px;
+    bottom: 86px;
+    transform: scale(0.8);
+
+    z-index: 200;
+
+    width: 128px;
+    height: 256px;
+}
+
+.gunman-move {
+    left: 420px;
+    transition: left 5s linear;
+}
+
+
+
+
